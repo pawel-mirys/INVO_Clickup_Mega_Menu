@@ -1,11 +1,11 @@
-import React from "react";
-import "./MainMenuGlobalComponent.scss";
-import ViteSvg from "@/assets/images/vite.svg";
+import { HomePage } from '@/modules/HomeModule/pages/HomePage/HomePage';
+import React from 'react';
+import styles from './MainMenuGlobalComponent.module.scss';
 
-export const MainMenuGlobalComponent: React.FC = () => (
-  <div>
-    <a href="https://vitejs.dev" target="_blank" rel="noreferrer">
-      <img src={ViteSvg} className="logo" alt="Vite logo" />
-    </a>
-  </div>
-);
+export const MainMenuGlobalComponent = () => {
+  return (
+    <div>
+      <HomePage>Hello World</HomePage>
+    </div>
+  );
+};

@@ -1,11 +1,10 @@
-import { HomePage } from '@/modules/HomeModule/pages/HomePage/HomePage';
 import React from 'react';
-import styles from './MainMenuGlobalComponent.module.scss';
+import { Button } from '../Button/Button';
 
 export const MainMenuGlobalComponent = () => {
   return (
     <div>
-      <HomePage>Hello World</HomePage>
+      <Button variant='expanded'>Sign Up</Button>
     </div>
   );
 };

@@ -1,18 +1,60 @@
 @import '/src/global-styles/style.scss';
+
 .button {
   @include flex(center, center, row);
   border: none;
   padding: 11px 14px;
   border-radius: 8px;
   gap: 8px;
-  font-weight: 800;
-  font-size: 14px;
-  letter-spacing: -2%;
-  line-height: 14px;
   cursor: pointer;
+  transition: 0.1s ease;
 }
 
 .primary {
   background-color: var(--color-accent-purple);
   color: var(--color-primary-white);
+  box-shadow: 0px 6px 16px 0px rgba(#796be999, 0.6);
+  font-size: 14px;
+  font-weight: 800;
+  line-height: 14px;
+  letter-spacing: -0.02em;
+
+  &:hover {
+    background-color: var(--color-button-primary-hover);
+  }
+  &:active {
+    background-color: var(--color-button-primary-active);
+  }
+}
+
+.secondary {
+  background-color: var(--color-primary-athensGray2);
+  color: var(--color-accent-darkGray);
+  box-shadow: 0px 6px 16px 0px rgba(#e9ebf099, 0.6);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 14px;
+  letter-spacing: -0.02em;
+
+  &:hover {
+    background-color: var(--color-button-secondary-hover);
+  }
+  &:active {
+    background-color: var(--color-button-secondary-active);
+  }
+}
+
+.clear {
+  background-color: var(--color-primary-salego);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 14px;
+  letter-spacing: -0.02em;
+}
+
+.expanded {
+  background: none;
+  &:hover {
+    background-color: var(--color-primary-salego);
+  }
 }

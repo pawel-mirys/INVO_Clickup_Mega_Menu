@@ -6,12 +6,13 @@ const buttonType = {
   primary: styles.primary,
   secondary: styles.secondary,
   clear: styles.clear,
+  expanded: styles.expanded,
 } as const;
 
 type ButtonProps = {
   children?: string | JSX.Element;
   className?: string;
-  variant: keyof typeof buttonType;
+  variant?: keyof typeof buttonType;
   onClick?: () => void;
 };
 
@@ -27,7 +28,11 @@ export const Button = ({
         e.preventDefault;
         onClick;
       }}
-      className={clsx(styles.button, className, buttonType[variant])}>
+      className={clsx(
+        styles.button,
+        className,
+        variant && buttonType[variant]
+      )}>
       {children}
     </button>
   );

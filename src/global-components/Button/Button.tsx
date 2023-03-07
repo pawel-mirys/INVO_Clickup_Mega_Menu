@@ -3,10 +3,10 @@ import clsx from 'clsx';
 import styles from './Button.module.scss';
 
 const buttonType = {
-  primary: styles.primary,
-  secondary: styles.secondary,
-  clear: styles.clear,
-  expanded: styles.expanded,
+  primary: styles.button__primary,
+  secondary: styles.button__seconday,
+  clear: styles.button__clear,
+  expanded: styles.button__expanded,
 } as const;
 
 type ButtonProps = {

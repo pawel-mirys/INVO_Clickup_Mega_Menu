@@ -16,7 +16,7 @@ export const Icon = ({ name = 'book', size = 25, className }: IconProps) => {
         console.log(svg);
       }}
       beforeInjection={(svg) => {
-        svg.classList.add(styles.icon_image);
+        svg.classList.add(styles.image);
         className && svg.classList.add(className);
         svg.setAttribute('style', `width: ${size}px; height:${size}px;`);
       }}

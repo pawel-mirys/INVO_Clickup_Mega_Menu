@@ -44,17 +44,10 @@
   }
 
   &_clear {
-    background-color: var(--color-primary-salego);
+    background: none;
     font-size: 14px;
-    font-weight: 700;
+    font-weight: 600;
     line-height: 14px;
     letter-spacing: -0.02em;
-  }
-
-  &_expanded {
-    background: none;
-    &:hover {
-      background-color: var(--color-primary-salego);
-    }
   }
 }

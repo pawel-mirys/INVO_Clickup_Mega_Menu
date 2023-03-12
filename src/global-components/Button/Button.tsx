@@ -6,7 +6,6 @@ const buttonType = {
   primary: styles.button_primary,
   secondary: styles.button_seconday,
   clear: styles.button_clear,
-  expanded: styles.button_expanded,
 } as const;
 
 type ButtonProps = {

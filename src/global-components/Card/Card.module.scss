@@ -1,0 +1,31 @@
+@import '/src/global-styles/style.scss';
+@import './CardVariants.module.scss';
+
+.card {
+  @include flex(flex-start, flex-start, row);
+  width: 192px;
+  height: 56px;
+  margin: 100px;
+  padding: 14px;
+  gap: 10px;
+  border-radius: 12px;
+
+  .title {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 14px;
+  }
+  .description {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 17px;
+  }
+  .title,
+  .description {
+    margin: 0;
+  }
+  .content {
+    @include flex(flex-start, flex-start, column);
+    gap: 8px;
+  }
+}

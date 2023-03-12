@@ -1,14 +1,17 @@
 import React from 'react';
-import { Button } from '../Button/Button';
-import { Icon } from '../Icon/Icon';
+
+import { Card } from '../Card/Card';
+
 import styles from './MainMenuGlobalComponent.module.scss';
 
 export const MainMenuGlobalComponent = () => {
   return (
     <div className={styles.main}>
-      <Button className={styles.main__button} variant='primary'>
-        Hello
-      </Button>
+      <Card
+        title='Tasks'
+        description='Break down any size project into customized tasks.'
+        variant='tasks'
+      />
     </div>
   );
 };

@@ -1,0 +1,117 @@
+.card {
+  &_tasks {
+    &:hover {
+      background-color: var(--color-card-tasks);
+    }
+  }
+  &_docs {
+    &:hover {
+      background-color: var(--color-card-docs);
+    }
+  }
+  &_goals {
+    &:hover {
+      background-color: var(--color-card-goals);
+    }
+  }
+  &_whiteboards {
+    &:hover {
+      background-color: var(--color-card-whiteboards);
+    }
+  }
+  &_dashboards {
+    &:hover {
+      background-color: var(--color-card-dashboards);
+    }
+  }
+  &_chat {
+    &:hover {
+      background-color: var(--color-card-chat);
+    }
+  }
+  &_templats {
+    &:hover {
+      background-color: var(--color-card-templates);
+    }
+  }
+  &_clickapps {
+    &:hover {
+      background-color: var(--color-card-clickapps);
+    }
+  }
+  &_integrations {
+    &:hover {
+      background-color: var(--color-card-integrations);
+    }
+  }
+  &_views {
+    &:hover {
+      background-color: var(--color-card-views);
+    }
+  }
+  &_hierarchy {
+    &:hover {
+      background-color: var(--color-card-hierarchy);
+    }
+  }
+  &_automations {
+    &:hover {
+      background-color: var(--color-card-automations);
+    }
+  }
+  &_team {
+    &:hover {
+      background-color: var(--color-card-team);
+    }
+  }
+  &_useCase {
+    &:hover {
+      background-color: var(--color-card-useCase);
+    }
+  }
+  &_type {
+    &:hover {
+      background-color: var(--color-card-type);
+    }
+  }
+  &_gettingStarted {
+    &:hover {
+      background-color: var(--color-card-gettingStarted);
+    }
+  }
+  &_clickupUniversity {
+    &:hover {
+      background-color: var(--color-card-clickupUniversity);
+    }
+  }
+  &_demos {
+    &:hover {
+      background-color: var(--color-card-demos);
+    }
+  }
+  &_import {
+    &:hover {
+      background-color: var(--color-card-import);
+    }
+  }
+  &_customers {
+    &:hover {
+      background-color: var(--color-card-customers);
+    }
+  }
+  &_helpDocs {
+    &:hover {
+      background-color: var(--color-card-helpDocs);
+    }
+  }
+  &_services {
+    &:hover {
+      background-color: var(--color-card-services);
+    }
+  }
+  &_consultants {
+    &:hover {
+      background-color: var(--color-card-consultants);
+    }
+  }
+}

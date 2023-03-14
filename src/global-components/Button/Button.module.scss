@@ -8,6 +8,7 @@
   gap: 8px;
   cursor: pointer;
   transition: 0.1s ease;
+  color: var(--color-accent-darkGray);
 
   &_primary {
     background-color: var(--color-accent-purple);
@@ -49,5 +50,6 @@
     font-weight: 600;
     line-height: 14px;
     letter-spacing: -0.02em;
+    padding: 0;
   }
 }

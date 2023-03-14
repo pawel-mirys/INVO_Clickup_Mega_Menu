@@ -9,7 +9,7 @@ const buttonType = {
 } as const;
 
 type ButtonProps = {
-  children?: string | JSX.Element;
+  children?: React.ReactNode;
   className?: string;
   variant?: keyof typeof buttonType;
   onClick?: () => void;
@@ -23,10 +23,7 @@ export const Button = ({
 }: ButtonProps) => {
   return (
     <button
-      onClick={(e: React.MouseEvent<HTMLButtonElement>) => {
-        e.preventDefault;
-        onClick;
-      }}
+      onClick={onClick}
       className={clsx(
         styles.button,
         className,

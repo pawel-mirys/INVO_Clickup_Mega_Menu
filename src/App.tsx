@@ -1,12 +1,12 @@
 import React from 'react';
+import { MenuContextProvider } from './modules/contexts/MenuContext';
 
-import { MainMenuGlobalComponent } from '@/global-components/MainMenuGlobalComponent/MainMenuGlobalComponent';
-import { Button } from './global-components/Button/Button';
+import { HomePage } from './modules/HomeModule/pages/HomePage/HomePage';
 
 const App = () => (
-  <>
-    <MainMenuGlobalComponent />
-  </>
+  <MenuContextProvider>
+    <HomePage />
+  </MenuContextProvider>
 );
 
 export default App;

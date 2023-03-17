@@ -3,6 +3,10 @@
 @import 'styles/fonts.scss';
 @import 'styles/mixins.scss';
 
+* {
+  font-family: Raleway, sans-serif;
+}
+
 body {
   background-color: gray;
 }
@@ -12,6 +16,12 @@ a {
   color: var(--sec);
 }
 
-* {
-  font-family: Raleway, sans-serif;
+h1,
+h2,
+h3 {
+  color: var(--color-accent-darkGray);
+}
+
+p {
+  color: var(--color-accent-lighyGray);
 }

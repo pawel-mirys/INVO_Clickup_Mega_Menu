@@ -6,7 +6,7 @@ import { useMenuContext } from '@/modules/contexts/MenuContext';
 import clsx from 'clsx';
 import { Icon } from '../Icon/Icon';
 
-export const Menu = () => {
+export const Navigation = () => {
   const menuContext = useMenuContext();
 
   const handleProductTab = () => {

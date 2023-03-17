@@ -5,11 +5,10 @@
   @include flex(flex-start, flex-start, row);
   width: 192px;
   height: 56px;
-  margin: 100px;
-  padding: 14px;
   gap: 10px;
   border-radius: 12px;
-
+  margin: 0;
+  padding: 14px;
   .title {
     font-size: 14px;
     font-weight: 700;

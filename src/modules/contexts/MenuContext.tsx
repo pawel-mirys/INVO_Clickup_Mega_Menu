@@ -14,6 +14,7 @@ const MenuContext = createContext<{
   productTabState: boolean;
   soultionTabState: boolean;
   learnTabState: boolean;
+  menuState: boolean;
   setProductTabState: (state: boolean) => void;
   setSolutionTabState: (state: boolean) => void;
   setLearnTabState: (state: boolean) => void;
@@ -26,6 +27,7 @@ export const MenuContextProvider = ({ children }: ContextProps) => {
   const [productTabState, setProductState] = useState(false);
   const [soultionTabState, setSolutionState] = useState(false);
   const [learnTabState, setLearnState] = useState(false);
+  const [menuState, setMenu] = useState(false);
 
   const setProductTabState = (state: boolean) => {
     setProductState((prev) => (prev = state));
@@ -37,12 +39,21 @@ export const MenuContextProvider = ({ children }: ContextProps) => {
     setLearnState((prev) => (prev = state));
   };
 
+  useEffect(() => {
+    if (productTabState || soultionTabState || learnTabState) {
+      setMenu((prev) => (prev = true));
+    } else {
+      setMenu((prev) => (prev = false));
+    }
+  }, [productTabState, soultionTabState, learnTabState]);
+
   return (
     <MenuContext.Provider
       value={{
         productTabState,
         soultionTabState,
         learnTabState,
+        menuState,
         setProductTabState,
         setSolutionTabState,
         setLearnTabState,

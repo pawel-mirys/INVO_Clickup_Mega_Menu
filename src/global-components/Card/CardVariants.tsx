@@ -24,4 +24,6 @@ export const cardVariants = {
   helpDocs: styles.card_helpDocs,
   services: styles.card_services,
   consultants: styles.card_consultants,
+  professionalServices: styles.card_professionalServices,
+  thirdParty: styles.card_thirdParty,
 } as const;

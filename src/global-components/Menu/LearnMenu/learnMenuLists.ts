@@ -1,95 +1,90 @@
+import { BlogCardProps } from '@/global-components/BlogCard/BlogCard';
 import { CardProps } from '@/global-components/Card/Card';
-import styles from './SolutionsMenu.module.scss';
+import styles from './LearnMenu.module.scss';
 
-export const teamCardsList: CardProps[] = [
+const coverURL = '/src/assets/images/cover.png';
+
+export const freeList: CardProps[] = [
   {
-    title: 'Engineering',
-    description: 'Break down any size project into customized tasks.',
-    variant: 'team',
-    className: styles.teamCard,
-    icon: 'settings1',
+    title: 'Getting Started',
+    description: 'All the tools you need to get started in ClickUp.',
+    variant: 'gettingStarted',
+    className: styles.freeLearnCard,
+    icon: 'promotion',
   },
   {
-    title: 'Product',
-    description: 'Manage product roadmaps from ideation to release.',
-    variant: 'team',
-    className: styles.teamCard,
-    icon: 'delivery',
+    title: 'ClickUp University',
+    description: 'Master productivity with interactive ClickUp courses.',
+    variant: 'clickupUniversity',
+    className: styles.freeLearnCard,
+    icon: 'graduate',
   },
   {
-    title: 'Marketing',
-    description: 'Collaborate on campaigns, clients, content and more.',
-    variant: 'team',
-    className: styles.teamCard,
-    icon: 'horn',
+    title: 'Demos',
+    description: 'Watch quick videos to learn basics of ClickUp.',
+    variant: 'demos',
+    className: styles.freeLearnCard,
+    icon: 'monitor',
   },
   {
-    title: 'Design',
-    description: 'Streamline workflows, files and feedback.',
-    variant: 'team',
-    className: styles.teamCard,
-    icon: 'pen',
+    title: 'Import',
+    description: 'Bring all other work into ClickUp in one easy import.',
+    variant: 'import',
+    className: styles.freeLearnCard,
+    icon: 'download',
   },
   {
-    title: 'Human Resources',
-    description: 'Manage, train and nurture your talent in one place.',
-    variant: 'team',
-    className: styles.teamCard,
-    icon: 'user',
+    title: 'Customers',
+    description: 'See why ClickUp means success for our clients.',
+    variant: 'customers',
+    className: styles.freeLearnCard,
+    icon: 'like',
   },
   {
-    title: 'Operations',
-    description: 'Streamline workflows to increase business efficiency.',
-    variant: 'team',
-    className: styles.teamCard,
-    icon: 'settings2',
+    title: 'Help Docs',
+    description: 'Find simple answers to questions about ClickUp.',
+    variant: 'helpDocs',
+    className: styles.freeLearnCard,
+    icon: 'book',
   },
 ];
 
-export const useCaseCardsList: CardProps[] = [
+export const premiumList: CardProps[] = [
   {
-    title: 'Project Management',
-    description: 'Manage and track projects of any type and size.',
-    variant: 'useCase',
-    className: styles.useCaseCard,
-    icon: 'bullet-list',
+    title: 'Professional Services',
+    description:
+      'Get premium support and hands-on help from our Professional Services Team.',
+    variant: 'professionalServices',
+    className: styles.premiumLearnCard,
+    icon: 'favorite',
   },
   {
-    title: 'Remote Work',
-    description: 'Stay on the same page even if you’re not in the room.',
-    variant: 'useCase',
-    className: styles.useCaseCard,
-    icon: 'earth',
-  },
-  {
-    title: 'CRM',
-    description: 'All your clients and their info in one place.',
-    variant: 'useCase',
-    className: styles.useCaseCard,
-    icon: 'group',
+    title: '100+ Verified Third-Party Consultants',
+    description:
+      'Hire a verred third-party ClickUp expert to help you with training. Workspace setup, workflows and more.',
+    variant: 'thirdParty',
+    className: styles.premiumLearnCard,
+    icon: 'user2',
   },
 ];
 
-export const typeCardsList: CardProps[] = [
+export const blogPosts: BlogCardProps[] = [
   {
-    title: 'Enterprice',
-    description: 'Align your organization toward company-wide goals.',
-    variant: 'type',
-    className: styles.typeCard,
-    icon: 'suitcase',
+    content: '10 Best Google Docs Alternatives & Competitors 2023',
+    coverSrc: coverURL,
+    coverAlt: 'blog cover',
+    className: styles.blogPost,
   },
   {
-    title: 'Startup',
-    description: 'Iterate quickly with a system that scales as you grow.',
-    variant: 'type',
-    className: styles.typeCard,
-    icon: 'light',
+    content: '10 Best Google Docs Alternatives & Competitors 2023',
+    coverSrc: coverURL,
+    coverAlt: 'blog cover',
+    className: styles.blogPost,
   },
   {
-    title: 'Non-Profit',
-    description: 'Save time working, spend more time saving the word.',
-    variant: 'type',
-    className: styles.typeCard,
-    icon: 'heart',
+    content: 'Best 10 Free Microsoft Word Alternatives 2023',
+    coverSrc: coverURL,
+    coverAlt: 'blog cover',
+    className: styles.blogPost,
   },
 ];

@@ -3,7 +3,6 @@
 
 .card {
   @include flex(flex-start, flex-start, row);
-
   height: 56px;
   gap: 10px;
   border-radius: 12px;

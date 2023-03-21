@@ -8,22 +8,14 @@ type IconProps = {
   className?: string;
 };
 
-export const Icon = React.forwardRef(
-  (
-    { name = 'book', size = 25, className }: IconProps,
-    ref: React.ForwardedRef<null>
-  ) => {
-    return (
-      <img
-        ref={ref}
-        width={size}
-        height={size}
-        className={clsx(styles.icon, className)}
-        src={`/src/assets/icons/${name}.svg`}
-        alt={`${name} icon`}
-      />
-    );
-  }
-);
-
-Icon.displayName = 'Icon';
+export const Icon = ({ name = 'book', size = 25, className }: IconProps) => {
+  return (
+    <img
+      width={size}
+      height={size}
+      className={clsx(styles.icon, className)}
+      src={`/src/assets/icons/${name}.svg`}
+      alt={`${name} icon`}
+    />
+  );
+};

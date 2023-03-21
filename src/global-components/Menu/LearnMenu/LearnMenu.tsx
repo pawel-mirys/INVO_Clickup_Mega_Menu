@@ -2,65 +2,70 @@ import React from 'react';
 import { Button } from '@/global-components/Button/Button';
 import { Card } from '@/global-components/Card/Card';
 import { Icon } from '@/global-components/Icon/Icon';
-import styles from './SolutionsMenu.module.scss';
-import {
-  teamCardsList,
-  useCaseCardsList,
-  typeCardsList,
-} from './learnMenuLists';
+import styles from './LearnMenu.module.scss';
+import { freeList, premiumList, blogPosts } from './learnMenuLists';
+import { BlogCard } from '@/global-components/BlogCard/BlogCard';
+import clsx from 'clsx';
 
-export const SolutionsMenu = () => {
+export const LearnMenu = () => {
   return (
-    <div className={styles.solutionsMenu}>
-      <div className={styles.teamContainer}>
-        <h2 className={styles.teamHeader}>TEAM</h2>
-        <div className={styles.teamList}>
-          {teamCardsList.map((item, index) => {
-            return (
-              <Card
-                key={index}
-                title={item.title}
-                description={item.description}
-                variant={item.variant}
-                className={item.className}
-                icon={item.icon}
-              />
-            );
-          })}
+    <div className={styles.learnMenu}>
+      <div className={styles.learnContainer}>
+        <div className={styles.freeContainer}>
+          <h2 className={clsx(styles.freeHeader, styles.header)}>LEARN</h2>
+          <div className={styles.freeList}>
+            {freeList.map((item, index) => {
+              return (
+                <Card
+                  key={index}
+                  title={item.title}
+                  description={item.description}
+                  variant={item.variant}
+                  className={item.className}
+                  icon={item.icon}
+                />
+              );
+            })}
+          </div>
         </div>
-        <Button className={styles.teamButton}>
-          See All <Icon size={24} name='arrow-team' />
-        </Button>
-      </div>
-      <div className={styles.useCaseContainer}>
-        <h2 className={styles.useCaseHeader}>USE CASE</h2>
-        <div className={styles.useCaseList}>
-          {useCaseCardsList.map((item, index) => {
-            return (
-              <Card
-                key={index}
-                title={item.title}
-                description={item.description}
-                variant={item.variant}
-                className={item.className}
-                icon={item.icon}
-              />
-            );
-          })}
+        <div className={styles.premiumContainer}>
+          <h2 className={clsx(styles.premiumHeader, styles.header)}>
+            PREMIUM SUPPORT
+          </h2>
+          <div className={styles.premiumList}>
+            {premiumList.map((item, index) => {
+              return (
+                <Card
+                  key={index}
+                  title={item.title}
+                  description={item.description}
+                  variant={item.variant}
+                  className={item.className}
+                  icon={item.icon}
+                />
+              );
+            })}
+          </div>
         </div>
       </div>
-      <div className={styles.typeContainer}>
-        <h2 className={styles.typeHeader}>TYPE</h2>
-        <div className={styles.typeList}>
-          {typeCardsList.map((item, index) => {
+      <div className={styles.blogContainer}>
+        <div className={styles.blogHeading}>
+          <h2 className={clsx(styles.blogHeader, styles.header)}>
+            LATEST FROM BLOG
+          </h2>
+          <Button className={styles.blogButton} variant='clear'>
+            See All <Icon name='arrow2' />
+          </Button>
+        </div>
+        <div className={styles.blogList}>
+          {blogPosts.map((item, index) => {
             return (
-              <Card
+              <BlogCard
                 key={index}
-                title={item.title}
-                description={item.description}
-                variant={item.variant}
+                content={item.content}
+                coverSrc={item.coverSrc}
+                coverAlt={item.coverAlt}
                 className={item.className}
-                icon={item.icon}
               />
             );
           })}

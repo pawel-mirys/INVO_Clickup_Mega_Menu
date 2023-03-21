@@ -114,4 +114,14 @@
       background-color: var(--color-card-consultants);
     }
   }
+  &_professionalServices {
+    &:hover {
+      background-color: var(--color-card-professionalServices);
+    }
+  }
+  &_thirdParty {
+    &:hover {
+      background-color: var(--color-card-thirdParty);
+    }
+  }
 }

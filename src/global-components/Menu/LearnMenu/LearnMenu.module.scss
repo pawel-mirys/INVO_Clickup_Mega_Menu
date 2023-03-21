@@ -1,72 +1,73 @@
 @import '/src/global-styles/style.scss';
 
-.solutionsMenu {
+.learnMenu {
   @include flex(flex-start, flex-start, row);
-  height: 342px;
+  height: 405px;
   width: 77.7%;
   margin: auto;
-  .teamContainer {
-    border-right: 1px solid var(--color-primary-athensGray1);
-    width: 64%;
-    .teamList {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      margin: -14px 0 0 -14px;
-      gap: 4px 0px;
-    }
-    .teamButton {
-      width: 98%;
-      font-size: 14px;
-      font-weight: 700;
-      line-height: 14px;
-      letter-spacing: -0.02em;
-      margin-top: 20px;
-      padding: 6px 14px;
-      background-color: var(--color-primary-lightPink);
-      &:hover {
-        background-color: var(--color-primary-lightPink2);
-      }
-    }
-  }
-  .teamHeader {
+  .header {
     margin: 32px 0;
     font-size: 14px;
     font-weight: 700;
     line-height: 14px;
     letter-spacing: 0.06em;
   }
-
-  .useCaseContainer {
+  .learnContainer {
+    @include flex(flex-start, flex-start, column);
     border-right: 1px solid var(--color-primary-athensGray1);
-   
-    .useCaseHeader {
-      margin: 32px 0;
-      font-size: 14px;
-      font-weight: 700;
-      line-height: 14px;
-      letter-spacing: 0.06em;
+    width: 56%;
+    padding-right: 23px;
+    .freeContainer {
+      width: 100%;
+      .freeList {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin: -14px 0 0 -14px;
+        gap: 4px 15px;
+      }
     }
-    .useCaseList {
-      display: grid;
-      grid-template-columns: 1fr;
-      margin: -14px 0 0 -14px;
-      gap: 4px 0;
+
+    .premiumContainer {
+      width: 100%;
+      .premiumHeader {
+        margin-top: 18px;
+      }
+      .premiumList {
+        display: grid;
+        grid-template-columns: auto auto;
+        margin: -14px 0 0 -14px;
+      }
     }
   }
-  .typeContainer {
+
+  .blogContainer {
+    @include flex(flex-start, flex-start, column);
+    width: 40%;
     margin-left: 24px;
-    .typeHeader {
-      margin: 32px 0;
-      font-size: 14px;
-      font-weight: 700;
-      line-height: 14px;
-      letter-spacing: 0.06em;
+    .blogHeading {
+      @include flex(space-between, center, row);
+      width: 100%;
+      .premiumHeader {
+        margin-left: 24px;
+      }
+      .blogButton {
+        @include flex(flex-start, center, row);
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 14px;
+        letter-spacing: -0.02em;
+        padding: 4px;
+        gap: 10px;
+        margin-right: -5px;
+        &:hover {
+          background-color: var(--color-primary-athensGray2);
+        }
+      }
     }
-    .typeList {
-      display: grid;
-      grid-template-columns: 1fr;
-      margin: -14px 0 0 -14px;
-      gap: 4px 0;
+    .blogList {
+      @include flex(flex-start, flex-start, column);
+      gap: 6px;
+      width: 80%;
     }
   }
 }

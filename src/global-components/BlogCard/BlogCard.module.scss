@@ -1,0 +1,22 @@
+@import '/src/global-styles/style.scss';
+
+.blogCard {
+  @include flex(flex-start, center, row);
+  gap: 16px;
+  .cover {
+    width: 93px;
+    height: 61px;
+    border-radius: 8px;
+  }
+  .content {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+  }
+
+  &:hover {
+    .content {
+      color: var(--color-accent-purple);
+    }
+  }
+}

@@ -9,7 +9,7 @@ export const cardVariants = {
   chat: styles.card_chat,
   templates: styles.card_templates,
   clickapps: styles.card_clickapps,
-  integrarions: styles.card_integrations,
+  integrations: styles.card_integrations,
   views: styles.card_views,
   hierarchy: styles.card_hierarchy,
   automations: styles.card_automations,
@@ -24,4 +24,6 @@ export const cardVariants = {
   helpDocs: styles.card_helpDocs,
   services: styles.card_services,
   consultants: styles.card_consultants,
+  professionalServices: styles.card_professionalServices,
+  thirdParty: styles.card_thirdParty,
 } as const;

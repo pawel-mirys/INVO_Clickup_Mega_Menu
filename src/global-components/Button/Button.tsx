@@ -4,7 +4,7 @@ import styles from './Button.module.scss';
 
 const buttonType = {
   primary: styles.button_primary,
-  secondary: styles.button_seconday,
+  secondary: styles.button_secondary,
   clear: styles.button_clear,
 } as const;
 

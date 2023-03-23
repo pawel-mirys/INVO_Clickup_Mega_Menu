@@ -1,15 +1,12 @@
 @import '/src/global-styles/style.scss';
-
 .navbar {
   background-color: var(--color-primary-white);
   height: 80px;
-
   .container {
     @include flex(space-between, center, row);
     width: 77.7%;
     margin: auto;
     height: 100%;
-
     .navItem {
       display: flex;
       position: relative;
@@ -30,23 +27,19 @@
       }
     }
   }
-
   .menu {
     @include flex(flex-start, center, row);
     gap: 32px;
     height: 100%;
   }
-
   .options,
   .accountOptions {
     @include flex(flex-start, center, row);
   }
-
   .options {
     gap: 32px;
     height: 100%;
   }
-
   .accountOptions {
     gap: 10px;
   }

@@ -1,0 +1,51 @@
+@import '/src/global-styles/style.scss';
+
+.options {
+  @include flex(flex-start, center, row);
+  gap: 32px;
+  height: 100%;
+  .navItem {
+    display: flex;
+    position: relative;
+    gap: 5px;
+    height: 100%;
+    &:hover,
+    &.active {
+      &::after {
+        position: absolute;
+        content: ' ';
+        width: 100%;
+        border: 1px solid var(--color-accent-purple);
+        bottom: 0;
+      }
+    }
+  }
+  .accountOptions {
+    @include flex(flex-start, center, row);
+    gap: 10px;
+  }
+
+  @media (max-width: 1200px) {
+    &.active {
+      height: auto;
+      width: 100%;
+      margin-top: 32px;
+    }
+    .accountOptions {
+      &.active {
+        @include flex(flex-start, center, column);
+        padding: 0px 24px;
+        gap: 16px;
+        width: 100%;
+        .optionButton {
+          width: 100%;
+          padding: 17px 14px;
+        }
+      }
+    }
+
+    .contactButton {
+      display: none;
+    }
+  }
+}

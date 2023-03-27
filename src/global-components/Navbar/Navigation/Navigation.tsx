@@ -1,13 +1,14 @@
 import React from 'react';
-import styles from './Navbar.module.scss';
-import { Logo } from '../Logo/Logo';
-import { Button } from '../Button/Button';
+import styles from './Navigation.module.scss';
+import { Button } from '../../Button/Button';
 import { useMenuContext } from '@/modules/contexts/MenuContext';
 import clsx from 'clsx';
-import { Icon } from '../Icon/Icon';
+import { Icon } from '../../Icon/Icon';
+import { useNavbarContext } from '@/modules/contexts/NavbarContext';
 
 export const Navigation = () => {
   const menuContext = useMenuContext();
+  const navbarContext = useNavbarContext();
 
   const handleProductTab = () => {
     menuContext?.productTabState === true
@@ -34,8 +35,11 @@ export const Navigation = () => {
   };
 
   return (
-    <div className={styles.menu}>
-      <Logo />
+    <div
+      className={clsx(
+        styles.navigation,
+        navbarContext?.navState && styles.active
+      )}>
       <Button
         onClick={handleProductTab}
         className={clsx(

@@ -1,0 +1,31 @@
+@import '/src/global-styles/style.scss';
+
+.burger {
+  position: relative;
+  display: none;
+  width: 40px;
+  cursor: pointer;
+  gap: 5px;
+  .bar {
+    width: 55%;
+    height: 2px;
+    background-color: var(--color-primary-black);
+    transition: all 0.5s ease;
+    border-radius: 10px;
+  }
+  .bar1 {
+    transform: rotate(45deg);
+    position: absolute;
+  }
+  .bar2 {
+    display: none;
+  }
+  .bar3 {
+    transform: rotate(-45deg);
+    position: absolute;
+  }
+
+  @media (max-width: 1200px) {
+    @include flex(center, center, column);
+  }
+}

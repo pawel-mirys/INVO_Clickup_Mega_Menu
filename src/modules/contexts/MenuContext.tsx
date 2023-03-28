@@ -12,7 +12,7 @@ type ContextProps = {
 
 const MenuContext = createContext<{
   productTabState: boolean;
-  soultionTabState: boolean;
+  soultionsTabState: boolean;
   learnTabState: boolean;
   menuState: boolean;
   setProductTabState: (state: boolean) => void;
@@ -25,7 +25,7 @@ export const MenuContextProvider = ({ children }: ContextProps) => {
     console.log('backbutton');
   });
   const [productTabState, setProductState] = useState(false);
-  const [soultionTabState, setSolutionState] = useState(false);
+  const [soultionsTabState, setSolutionState] = useState(false);
   const [learnTabState, setLearnState] = useState(false);
   const [menuState, setMenu] = useState(false);
 
@@ -40,18 +40,18 @@ export const MenuContextProvider = ({ children }: ContextProps) => {
   };
 
   useEffect(() => {
-    if (productTabState || soultionTabState || learnTabState) {
+    if (productTabState || soultionsTabState || learnTabState) {
       setMenu((prev) => (prev = true));
     } else {
       setMenu((prev) => (prev = false));
     }
-  }, [productTabState, soultionTabState, learnTabState]);
+  }, [productTabState, soultionsTabState, learnTabState]);
 
   return (
     <MenuContext.Provider
       value={{
         productTabState,
-        soultionTabState,
+        soultionsTabState,
         learnTabState,
         menuState,
         setProductTabState,

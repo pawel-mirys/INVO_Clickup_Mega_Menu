@@ -1,6 +1,6 @@
 import { useNavbarContext } from '@/modules/contexts/NavbarContext';
 import clsx from 'clsx';
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { Burger } from '../Burger/Burger';
 import { Logo } from '../Logo/Logo';
 

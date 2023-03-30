@@ -107,6 +107,8 @@
   }
 
   @media (max-width: 1200px) {
+    height: auto;
+    width: 100%;
     .navigationButton {
       .navItem {
         @include flex(space-between, center, row);

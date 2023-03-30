@@ -36,11 +36,11 @@
       &.active {
         @include flex(flex-start, flex-start, column);
         background-color: var(--color-primary-white);
-        position: absolute;
-        width: 388px;
-        flex-direction: column;
-        right: 0;
-        top: 80px;
+        position: fixed;
+        width: 340px;
+        right: 0px;
+        top: 88px;
+        padding: 0 24px;
       }
     }
   }

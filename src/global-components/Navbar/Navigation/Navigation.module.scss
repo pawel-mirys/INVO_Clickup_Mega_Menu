@@ -27,7 +27,6 @@
   @media (max-width: 1200px) {
     display: none;
     width: 100%;
-    height: auto;
 
     &.active {
       @include flex(flex-start, flex-start, column);
@@ -35,13 +34,12 @@
     }
     .navItem {
       @include flex(space-between, center, row);
-      padding: 0 24px;
+      padding: 0px 24px;
       height: 24px;
       width: 100%;
       font-size: 18px;
       font-weight: 700;
       line-height: 18px;
-
       &:hover,
       &.active {
         &::after {

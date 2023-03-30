@@ -1,7 +1,6 @@
 import React from 'react';
 import styles from './Navigation.module.scss';
 import { Button } from '../../Button/Button';
-import { useMenuContext } from '@/modules/contexts/MenuContext';
 import clsx from 'clsx';
 import { useNavbarContext } from '@/modules/contexts/NavbarContext';
 import { ProductMenu } from '@/global-components/ProductMenu/ProductMenu';
@@ -18,14 +17,14 @@ export const Navigation = () => {
         navbarContext?.navState && styles.active
       )}>
       <ProductMenu />
-      <SolutionsMenu />
+      {/* <SolutionsMenu />
       <LearnMenu />
       <Button className={styles.navItem} variant='clear'>
         <a href='#'>Pricing</a>
       </Button>
       <Button className={styles.navItem} variant='clear'>
         <a href='#'>Enterprise</a>
-      </Button>
+      </Button> */}
     </div>
   );
 };

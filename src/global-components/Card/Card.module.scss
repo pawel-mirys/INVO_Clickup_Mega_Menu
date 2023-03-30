@@ -27,4 +27,18 @@
     @include flex(flex-start, flex-start, column);
     gap: 8px;
   }
+
+  @media (max-width: 1200px) {
+    @include flex(flex-start, center, row);
+    padding: 0;
+    height: 72px;
+    .title {
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 16px;
+    }
+    .description {
+      display: none;
+    }
+  }
 }

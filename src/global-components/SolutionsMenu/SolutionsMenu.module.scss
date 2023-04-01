@@ -41,90 +41,36 @@
     margin: auto;
   }
 
-  .teamContainer {
-    margin-right: 45px;
-    .teamList {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      margin: -14px 0 0 -14px;
-      gap: 4px 0px;
-    }
-    .teamButton {
-      width: 100%;
-      font-size: 14px;
-      font-weight: 700;
-      line-height: 14px;
-      letter-spacing: -0.02em;
-      margin-top: 20px;
-      padding: 6px 14px;
-      background-color: var(--color-primary-lightPink);
-      &:hover {
-        background-color: var(--color-primary-lightPink2);
-      }
-    }
-  }
-  .teamHeader {
-    margin: 32px 0;
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 14px;
-    letter-spacing: 0.06em;
-  }
-
-  .useCaseContainer {
-    border-right: 1px solid var(--color-primary-athensGray1);
-    border-left: 1px solid var(--color-primary-athensGray1);
-    padding-left: 24px;
-    .useCaseHeader {
-      margin: 32px 0;
-      font-size: 14px;
-      font-weight: 700;
-      line-height: 14px;
-      letter-spacing: 0.06em;
-    }
-    .useCaseList {
-      display: grid;
-      grid-template-columns: 1fr;
-      margin: -14px 0 0 -14px;
-      gap: 4px 0;
-    }
-  }
-  .typeContainer {
-    margin-left: 24px;
-    .typeHeader {
-      margin: 32px 0;
-      font-size: 14px;
-      font-weight: 700;
-      line-height: 14px;
-      letter-spacing: 0.06em;
-    }
-    .typeList {
-      display: grid;
-      grid-template-columns: 1fr;
-      margin: -14px 0 0 -14px;
-      gap: 4px 0;
-    }
-  }
+ 
 
   @media (max-width: 1200px) {
     height: auto;
     width: 100%;
     .navigationButton {
+      height: auto;
       .navItem {
         @include flex(space-between, center, row);
-        padding: 0 24px;
         height: 24px;
         width: 100%;
         font-size: 18px;
         font-weight: 700;
         line-height: 18px;
-
         &:hover,
         &.active {
           &::after {
             border: none;
           }
         }
+      }
+    }
+    .menuContainer {
+      position: static;
+      height: 100%;
+      @include flex(center, center, column);
+
+      .menuWrapper {
+        grid-template-columns: 1fr;
+        width: 100%;
       }
     }
   }

@@ -36,8 +36,10 @@
       &.active {
         @include flex(flex-start, flex-start, column);
         background-color: var(--color-primary-white);
-        position: fixed;
+        position: absolute;
         width: 340px;
+        height: auto;
+        min-height: 100%;
         right: 0px;
         top: 88px;
         padding: 0 24px;

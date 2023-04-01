@@ -1,8 +1,5 @@
-import { BlogCardProps } from '@/global-components/BlogCard/BlogCard';
 import { CardProps } from '@/global-components/Card/Card';
-import styles from './LearnMenu.module.scss';
-
-const coverURL = '/src/assets/images/cover.png';
+import styles from './Learn.module.scss';
 
 export const freeList: CardProps[] = [
   {
@@ -65,26 +62,5 @@ export const premiumList: CardProps[] = [
     variant: 'thirdParty',
     className: styles.premiumLearnCard,
     icon: 'user2',
-  },
-];
-
-export const blogPosts: BlogCardProps[] = [
-  {
-    content: '10 Best Google Docs Alternatives & Competitors 2023',
-    coverSrc: coverURL,
-    coverAlt: 'blog cover',
-    className: styles.blogPost,
-  },
-  {
-    content: '10 Best Google Docs Alternatives & Competitors 2023',
-    coverSrc: coverURL,
-    coverAlt: 'blog cover',
-    className: styles.blogPost,
-  },
-  {
-    content: 'Best 10 Free Microsoft Word Alternatives 2023',
-    coverSrc: coverURL,
-    coverAlt: 'blog cover',
-    className: styles.blogPost,
   },
 ];

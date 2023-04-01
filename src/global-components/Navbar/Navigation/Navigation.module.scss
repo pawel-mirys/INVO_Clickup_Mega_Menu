@@ -27,14 +27,12 @@
   @media (max-width: 1200px) {
     display: none;
     width: 100%;
-
     &.active {
       @include flex(flex-start, flex-start, column);
       margin-top: 10px;
     }
     .navItem {
       @include flex(space-between, center, row);
-      padding: 0px 24px;
       height: 24px;
       width: 100%;
       font-size: 18px;

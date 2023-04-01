@@ -28,7 +28,7 @@ export const Navbar = () => {
               navContext?.navState && styles.active
             )}>
             <Navigation />
-            {/* <Options /> */}
+            <Options />
           </div>
           <Burger onClick={handleNavState} />
         </div>

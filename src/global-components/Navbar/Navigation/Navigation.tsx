@@ -17,14 +17,14 @@ export const Navigation = () => {
         navbarContext?.navState && styles.active
       )}>
       <ProductMenu />
-      {/* <SolutionsMenu />
+      <SolutionsMenu />
       <LearnMenu />
       <Button className={styles.navItem} variant='clear'>
         <a href='#'>Pricing</a>
       </Button>
       <Button className={styles.navItem} variant='clear'>
         <a href='#'>Enterprise</a>
-      </Button> */}
+      </Button>
     </div>
   );
 };

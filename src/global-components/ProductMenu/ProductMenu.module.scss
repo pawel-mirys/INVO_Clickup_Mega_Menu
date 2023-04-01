@@ -1,8 +1,11 @@
 @import '/src/global-styles/style.scss';
+
 .productMenu {
   height: 100%;
+
   .navigationButton {
     height: 100%;
+
     .navItem {
       display: flex;
       position: relative;
@@ -40,53 +43,6 @@
     margin: auto;
   }
 
-  .productContainer {
-    border-right: 1px solid var(--color-primary-athensGray1);
-    width: 64%;
-    padding-right: 24px;
-    height: 100%;
-    .productList {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      margin: -14px 0 0 -14px;
-      gap: 4px 4px;
-    }
-    .productsButton {
-      width: 100%;
-      font-size: 14px;
-      font-weight: 700;
-      line-height: 14px;
-      letter-spacing: -0.02em;
-      margin-top: 20px;
-      padding: 6px 14px;
-    }
-    .productHeader {
-      margin: 32px 0;
-      font-size: 14px;
-      font-weight: 700;
-      line-height: 14px;
-      letter-spacing: 0.06em;
-    }
-  }
-
-  .platformContainer {
-    margin-left: 24px;
-    width: 40%;
-    .platformHeader {
-      margin: 32px 0;
-      font-size: 14px;
-      font-weight: 700;
-      line-height: 14px;
-      letter-spacing: 0.06em;
-    }
-    .platformList {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      margin: -14px 0 0 -14px;
-      gap: 4px 0;
-    }
-  }
-
   @media (max-width: 1200px) {
     height: auto;
     width: 100%;
@@ -95,7 +51,6 @@
       height: auto;
       .navItem {
         @include flex(space-between, center, row);
-       
         height: 24px;
         width: 100%;
         font-size: 18px;
@@ -118,32 +73,6 @@
       .menuWrapper {
         flex-direction: column;
         width: 100%;
-      }
-
-      .productContainer {
-        width: 100%;
-        padding: 0;
-        border: none;
-        .productHeader {
-          display: none;
-        }
-        .productList {
-          grid-template-columns: 1fr;
-          margin: 0;
-        }
-      }
-
-      .platformContainer {
-        width: 100%;
-        padding: 0;
-        margin: 0;
-        .platformHeader {
-          display: none;
-        }
-        .platformList {
-          grid-template-columns: 1fr;
-          margin: 0;
-        }
       }
     }
   }

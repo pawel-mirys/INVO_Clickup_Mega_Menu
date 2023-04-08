@@ -1,5 +1,4 @@
 import { CardProps } from '@/global-components/Card/Card';
-import styles from './Team.module.scss';
 
 export const teamCardsList: CardProps[] = [
   {

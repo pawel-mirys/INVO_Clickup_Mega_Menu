@@ -1,5 +1,4 @@
 import { CardProps } from '@/global-components/Card/Card';
-import styles from './UseCase.module.scss';
 
 export const useCaseCardsList: CardProps[] = [
   {

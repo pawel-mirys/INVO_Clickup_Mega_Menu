@@ -22,7 +22,12 @@
   }
 
   @media (max-width: 1200px) {
-    padding: 16px 0;
+    border-top: 1px solid var(--color-primary-athensGray1);
+    padding: 15px 0;
     width: 100%;
+    .content {
+      width: 50%;
+    }
   }
+  
 }

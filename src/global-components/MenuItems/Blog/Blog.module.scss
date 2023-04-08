@@ -38,6 +38,7 @@
     border-top: 1px solid var(--color-primary-athensGray1);
     .blogList {
       width: 100%;
+      gap: 0;
     }
     .header {
       margin: 32px 0;
@@ -45,6 +46,11 @@
       font-weight: 700;
       line-height: 14px;
       letter-spacing: 0.06em;
+    }
+  }
+  @media (max-width: 500px) {
+    .blogList {
+      gap: 0;
     }
   }
 }

@@ -1,5 +1,4 @@
 import { CardProps } from '@/global-components/Card/Card';
-import styles from './Platform.module.scss';
 
 export const platformCardsList: CardProps[] = [
   {

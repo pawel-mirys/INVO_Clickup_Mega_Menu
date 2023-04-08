@@ -1,5 +1,4 @@
 import { CardProps } from '@/global-components/Card/Card';
-import styles from './Learn.module.scss';
 
 export const freeList: CardProps[] = [
   {

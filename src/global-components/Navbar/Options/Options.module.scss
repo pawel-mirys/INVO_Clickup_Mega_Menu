@@ -34,18 +34,30 @@
     .accountOptions {
       &.active {
         @include flex(flex-start, center, column);
-
         gap: 16px;
         width: 100%;
+        padding: 0 24px;
         .optionButton {
           width: 100%;
           padding: 17px 14px;
         }
       }
     }
-
     .contactButton {
       display: none;
+    }
+  }
+
+  @media (max-width: 450px) {
+    .accountOptions {
+      .loginButton {
+        display: none;
+      }
+      &.active {
+        .loginButton {
+          display: block;
+        }
+      }
     }
   }
 }

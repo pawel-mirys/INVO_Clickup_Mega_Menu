@@ -17,7 +17,7 @@ export const Learn = () => {
                 title={item.title}
                 description={item.description}
                 variant={item.variant}
-                className={item.className}
+                className={styles.freeLearnCard}
                 icon={item.icon}
               />
             );
@@ -36,7 +36,7 @@ export const Learn = () => {
                 title={item.title}
                 description={item.description}
                 variant={item.variant}
-                className={item.className}
+                className={styles.premiumLearnCard}
                 icon={item.icon}
               />
             );

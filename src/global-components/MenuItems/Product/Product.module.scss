@@ -27,15 +27,25 @@
   }
 
   @media (max-width: 1200px) {
-    width: 100%;
-    padding: 0;
+    width: calc(100% - 48px);
+    padding: 0 24px;
     border: none;
+    margin: 0 0 42px 0;
     .productHeader {
       display: none;
     }
     .productList {
       grid-template-columns: 1fr;
       margin: 0;
+      gap: 0px;
+    }
+    .productCard {
+      &:last-of-type {
+        border: none;
+      }
+    }
+    .productsButton {
+      margin-top: 10px;
     }
   }
 }

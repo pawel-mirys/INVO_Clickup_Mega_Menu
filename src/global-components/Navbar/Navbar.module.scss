@@ -32,17 +32,30 @@
       gap: 24px;
       width: 95%;
     }
+    .burger {
+      margin-right: -5px;
+    }
     .navigationWrapper {
       &.active {
         @include flex(flex-start, flex-start, column);
         background-color: var(--color-primary-white);
         position: absolute;
-        width: 340px;
+        width: 388px;
         height: auto;
         min-height: 100%;
         right: 0px;
-        top: 88px;
-        padding: 0 24px;
+        top: 79px;
+      }
+    }
+  }
+
+  @media (max-width: 500px) {
+    .wrapper {
+      width: 90%;
+    }
+    .navigationWrapper {
+      &.active {
+        width: calc(100% - 48px);
       }
     }
   }

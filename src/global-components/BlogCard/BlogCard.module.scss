@@ -12,11 +12,17 @@
     font-size: 14px;
     font-weight: 500;
     line-height: 20px;
+    margin: 0;
   }
 
   &:hover {
     .content {
       color: var(--color-accent-purple);
     }
+  }
+
+  @media (max-width: 1200px) {
+    padding: 16px 0;
+    width: 100%;
   }
 }

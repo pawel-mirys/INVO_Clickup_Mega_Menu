@@ -23,10 +23,12 @@ export const Options = () => {
           styles.accountOptions,
           navbarContext?.navState && styles.active
         )}>
-        <Button variant='primary' className={styles.optionButton}>
+        <Button
+          variant='primary'
+          className={clsx(styles.optionButton, styles.signInButton)}>
           <a href='#'>Sign Up</a>
         </Button>
-        <Button variant='secondary' className={styles.optionButton}>
+        <Button variant='secondary' className={clsx(styles.optionButton, styles.loginButton)}>
           <a href='#'>Log in</a>
         </Button>
       </div>

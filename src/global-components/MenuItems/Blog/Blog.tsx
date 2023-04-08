@@ -25,7 +25,7 @@ export const Blog = () => {
               content={item.content}
               coverSrc={item.coverSrc}
               coverAlt={item.coverAlt}
-              className={item.className}
+              className={styles.blogPost}
             />
           );
         })}

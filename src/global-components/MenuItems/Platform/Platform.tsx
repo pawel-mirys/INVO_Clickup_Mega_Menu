@@ -15,7 +15,7 @@ export const Platform = () => {
               title={item.title}
               description={item.description}
               variant={item.variant}
-              className={item.className}
+              className={styles.platformCard}
               icon={item.icon}
             />
           );

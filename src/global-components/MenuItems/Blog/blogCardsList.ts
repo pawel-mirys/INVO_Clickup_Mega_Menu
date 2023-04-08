@@ -8,7 +8,6 @@ export const blogPosts: BlogCardProps[] = [
     content: '10 Best Google Docs Alternatives & Competitors 2023',
     coverSrc: coverURL,
     coverAlt: 'blog cover',
-    className: styles.blogPost,
   },
   {
     content: '10 Best Google Docs Alternatives & Competitors 2023',

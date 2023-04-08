@@ -17,7 +17,7 @@ export const Team = () => {
               title={item.title}
               description={item.description}
               variant={item.variant}
-              className={item.className}
+              className={styles.teamCard}
               icon={item.icon}
             />
           );

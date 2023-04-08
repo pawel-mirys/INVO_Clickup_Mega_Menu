@@ -30,7 +30,7 @@ export const Navbar = () => {
             <Navigation />
             <Options />
           </div>
-          <Burger onClick={handleNavState} />
+          <Burger className={styles.burger} onClick={handleNavState} />
         </div>
       </div>
     </nav>

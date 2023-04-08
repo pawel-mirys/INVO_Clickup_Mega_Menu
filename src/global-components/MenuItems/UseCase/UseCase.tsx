@@ -15,7 +15,7 @@ export const UseCase = () => {
               title={item.title}
               description={item.description}
               variant={item.variant}
-              className={item.className}
+              className={styles.useCaseCard}
               icon={item.icon}
             />
           );

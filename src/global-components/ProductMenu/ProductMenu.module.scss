@@ -1,0 +1,81 @@
+@import '/src/global-styles/style.scss';
+
+.productMenu {
+  height: 100%;
+
+  .navigationButton {
+    height: 100%;
+
+    .navItem {
+      display: flex;
+      position: relative;
+      gap: 5px;
+      height: 100%;
+      &:hover,
+      &.active {
+        &::after {
+          position: absolute;
+          content: ' ';
+          width: 100%;
+          border: 1px solid var(--color-accent-purple);
+          bottom: 0;
+        }
+      }
+      .activeIcon {
+        transform: rotate(180deg);
+      }
+    }
+  }
+
+  .menuContainer {
+    position: absolute;
+    background-color: var(--color-primary-white);
+    height: 342px;
+    width: 100%;
+    top: 80px;
+    left: 0;
+  }
+
+  .menuWrapper {
+    @include flex(flex-start, flex-start, row);
+    width: 77.7%;
+    height: 100%;
+    margin: auto;
+  }
+
+  @media (max-width: 1200px) {
+    height: auto;
+    width: 100%;
+
+    .navigationButton {
+      height: auto;
+      .navItem {
+        @include flex(space-between, center, row);
+        height: 24px;
+        width: 100%;
+        padding: 0 24px;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 18px;
+        &:hover,
+        &.active {
+          &::after {
+            border: none;
+          }
+        }
+      }
+    }
+
+    .menuContainer {
+      position: static;
+      height: 100%;
+      @include flex(center, center, column);
+      margin-top: 16px;
+
+      .menuWrapper {
+        flex-direction: column;
+        width: 100%;
+      }
+    }
+  }
+}

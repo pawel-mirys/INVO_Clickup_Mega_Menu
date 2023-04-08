@@ -1,12 +1,15 @@
 import React from 'react';
-import { HomePage } from "@modules";
-import { MainMenuGlobalComponent } from "@/global-components";
+import { MenuContextProvider } from './modules/contexts/MenuContext';
+import { NavbarContextProvider } from './modules/contexts/NavbarContext';
 
-const App: React.FC = () => (
-  <>
-    <MainMenuGlobalComponent />
-    <HomePage msg="INVO Academy Starter with React + TypeScript" />
-  </>
+import { HomePage } from './modules/HomeModule/pages/HomePage/HomePage';
+
+const App = () => (
+  <NavbarContextProvider>
+    <MenuContextProvider>
+      <HomePage />
+    </MenuContextProvider>
+  </NavbarContextProvider>
 );
 
 export default App;

@@ -1,15 +1,27 @@
-/// Main Styles File
-/// Here we import all the global Styles files we need for our project.
+@import 'styles/normalize.scss';
+@import 'styles/root.scss';
+@import 'styles/fonts.scss';
+@import 'styles/mixins.scss';
 
-@import "styles/normalize.scss";
-@import "styles/root.scss";
-@import "styles/fonts.scss";
+* {
+  font-family: Raleway, sans-serif;
+}
 
 body {
-  font-family: 'Roboto', sans-serif;
-  color: var(--color-primary);
+  background-color: gray;
+}
+
+a {
+  text-decoration: none;
+  color: var(--sec);
+}
+
+h1,
+h2,
+h3 {
+  color: var(--color-accent-darkGray);
 }
 
 p {
-  color: var(--color-on-surface);
+  color: var(--color-accent-lighyGray);
 }

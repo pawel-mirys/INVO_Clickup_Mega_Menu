@@ -1,0 +1,31 @@
+.typeContainer {
+  margin-left: 24px;
+  .typeHeader {
+    margin: 32px 0;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 14px;
+    letter-spacing: 0.06em;
+  }
+  .typeList {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: -14px 0 0 -14px;
+    gap: 4px 0;
+  }
+
+  @media (max-width: 1200px) {
+    width: calc(100% - 48px);
+    padding: 0 24px;
+    border: none;
+    margin: 0;
+    border-top: 1px solid var(--color-primary-athensGray1);
+    .typeList {
+      margin: 0;
+      gap: 0;
+    }
+    .typeHeader {
+      margin: 30px 0 18px 0;
+    }
+  }
+}

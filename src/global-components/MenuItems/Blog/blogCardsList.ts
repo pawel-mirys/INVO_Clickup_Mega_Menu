@@ -1,7 +1,7 @@
 import { BlogCardProps } from '@/global-components/BlogCard/BlogCard';
 import styles from './Blog.module.scss';
 
-const coverURL = '/src/assets/images/cover.png';
+const coverURL = '/public/images/cover.png';
 
 export const blogPosts: BlogCardProps[] = [
   {

@@ -5,6 +5,15 @@
   border-right: 1px solid var(--color-primary-athensGray1);
   width: 56%;
   padding-right: 23px;
+
+  .header {
+    margin: 32px 0;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 14px;
+    letter-spacing: 0.06em;
+  }
+
   .freeContainer {
     width: 100%;
     .freeList {

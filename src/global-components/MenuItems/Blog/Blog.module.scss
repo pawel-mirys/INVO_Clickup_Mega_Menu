@@ -8,8 +8,12 @@
   .blogHeading {
     @include flex(space-between, center, row);
     width: 100%;
-    .premiumHeader {
-      margin-left: 24px;
+    .blogHeader {
+      margin: 32px 0;
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 14px;
+      letter-spacing: 0.06em;
     }
     .blogButton {
       @include flex(flex-start, center, row);

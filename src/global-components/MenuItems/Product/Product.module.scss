@@ -1,21 +1,21 @@
 .productContainer {
   border-right: 1px solid var(--color-primary-athensGray1);
   width: 64%;
-  padding-right: 24px;
   height: 100%;
+
   .productList {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 32% 33% 32%;
     margin: -14px 0 0 -14px;
-    gap: 4px 4px;
+    gap: 4px 1px;
   }
   .productsButton {
-    width: 100%;
+    width: 96%;
     font-size: 14px;
     font-weight: 700;
     line-height: 14px;
     letter-spacing: -0.02em;
-    margin-top: 20px;
+    margin-top: 18px;
     padding: 6px 14px;
   }
   .productHeader {

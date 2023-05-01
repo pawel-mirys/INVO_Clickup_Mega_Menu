@@ -1,9 +1,9 @@
 import React from 'react';
 import { Button } from '../Button/Button';
 import { Icon } from '../Icon/Icon';
-import styles from './Footer.module.scss';
+import styles from './ContactFooter.module.scss';
 
-export const Footer = () => {
+export const ContactFooter = () => {
   return (
     <footer className={styles.footer}>
       <div className={styles.container}>

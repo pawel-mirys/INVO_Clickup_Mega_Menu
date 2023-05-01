@@ -6,6 +6,7 @@ import clsx from 'clsx';
 import { useMenuContext } from '@/modules/contexts/MenuContext';
 import { Learn } from '../MenuItems/Learn/Learn';
 import { Blog } from '../MenuItems/Blog/Blog';
+import { ContactFooter } from '../ContactFooter/ContactFooter';
 
 export const LearnMenu = () => {
   const menuContext = useMenuContext();
@@ -42,6 +43,7 @@ export const LearnMenu = () => {
             <Learn />
             <Blog />
           </div>
+          <ContactFooter />
         </div>
       )}
     </div>

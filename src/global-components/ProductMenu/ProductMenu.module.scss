@@ -16,9 +16,10 @@
         &::after {
           position: absolute;
           content: ' ';
-          width: 100%;
+          width: 94px;
           border: 1px solid var(--color-accent-purple);
           bottom: 0;
+          right: -3px;
         }
       }
       .activeIcon {

@@ -7,6 +7,7 @@ import clsx from 'clsx';
 import { Team } from '../MenuItems/Team/Team';
 import { UseCase } from '../MenuItems/UseCase/UseCase';
 import { Type } from '../MenuItems/Type/Type';
+import { ContactFooter } from '../ContactFooter/ContactFooter';
 
 export const SolutionsMenu = () => {
   const menuContext = useMenuContext();
@@ -46,6 +47,7 @@ export const SolutionsMenu = () => {
             <UseCase />
             <Type />
           </div>
+          <ContactFooter />
         </div>
       )}
     </div>

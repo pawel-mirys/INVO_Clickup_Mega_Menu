@@ -6,7 +6,7 @@
 
   .wrapper {
     @include flex(flex-start, center, row);
-    width: 77.7%;
+    width: calc(100% - 320px);
     margin: auto;
     height: 100%;
 

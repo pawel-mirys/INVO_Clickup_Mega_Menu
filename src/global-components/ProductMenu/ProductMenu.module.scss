@@ -11,16 +11,24 @@
       position: relative;
       gap: 5px;
       height: 100%;
+      &::after {
+        transition: all 0.3s;
+        position: absolute;
+        content: ' ';
+        width: 94px;
+        border: 1px solid var(--color-accent-purple);
+        bottom: 0;
+        right: -3px;
+        opacity: 0;
+      }
       &:hover,
       &.active {
         &::after {
-          position: absolute;
-          content: ' ';
-          width: 94px;
-          border: 1px solid var(--color-accent-purple);
-          bottom: 0;
-          right: -3px;
+          opacity: 1;
         }
+      }
+      .icon {
+        transition: 0.3s;
       }
       .activeIcon {
         transform: rotate(180deg);

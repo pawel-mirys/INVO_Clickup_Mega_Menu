@@ -33,7 +33,8 @@ export const SolutionsMenu = () => {
           Solutions
           <Icon
             className={clsx(
-              menuContext?.soultionsTabState && styles.activeIcon
+              menuContext?.soultionsTabState && styles.activeIcon,
+              styles.icon
             )}
             name='arrow'
           />

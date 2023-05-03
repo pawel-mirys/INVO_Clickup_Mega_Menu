@@ -31,7 +31,7 @@
     }
     .premiumList {
       display: grid;
-      grid-template-columns: auto auto;
+      grid-template-columns: 49% 1fr;
       margin: -14px 0 0 -14px;
     }
   }

@@ -31,7 +31,10 @@ export const LearnMenu = () => {
           variant='clear'>
           Learn
           <Icon
-            className={clsx(menuContext?.learnTabState && styles.activeIcon)}
+            className={clsx(
+              menuContext?.learnTabState && styles.activeIcon,
+              styles.icon
+            )}
             name='arrow'
           />
         </Button>

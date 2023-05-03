@@ -31,7 +31,10 @@ export const ProductMenu = () => {
           variant='clear'>
           Product
           <Icon
-            className={clsx(menuContext?.productTabState && styles.activeIcon)}
+            className={clsx(
+              menuContext?.productTabState && styles.activeIcon,
+              styles.icon
+            )}
             name='arrow'
           />
         </Button>

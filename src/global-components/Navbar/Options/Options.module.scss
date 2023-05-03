@@ -2,8 +2,9 @@
 
 .options {
   @include flex(flex-start, center, row);
-  gap: 36px;
+  gap:35px;
   height: 100%;
+  margin-right: 5px;
 
   .navItem {
     display: flex;
@@ -23,7 +24,7 @@
   }
   .accountOptions {
     @include flex(flex-start, center, row);
-    gap: 10px;
+    gap: 9px;
   }
 
   @media (max-width: 1200px) {

@@ -2,7 +2,6 @@
 
 .solutionsMenu {
   height: 100%;
-
   .navigationButton {
     height: 100%;
     .navItem {
@@ -15,9 +14,10 @@
         &::after {
           position: absolute;
           content: ' ';
-          width: 100%;
+          width: 112%;
           border: 1px solid var(--color-accent-purple);
           bottom: 0;
+          margin-right: 8px;
         }
       }
       .activeIcon {
@@ -35,10 +35,10 @@
     width: 100%;
   }
   .menuWrapper {
-    display: grid;
-    grid-template-columns: 3fr 1fr 1fr;
+    @include flex(flex-start, flex-start, row);
     width: 77.7%;
     margin: auto;
+    height: 100%;
   }
 
   @media (max-width: 1200px) {

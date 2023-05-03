@@ -1,7 +1,8 @@
 .useCaseContainer {
   border-right: 1px solid var(--color-primary-athensGray1);
-  border-left: 1px solid var(--color-primary-athensGray1);
-  padding-left: 24px;
+  height: 100%;
+  padding: 0 20px 0 25px;
+
   .useCaseHeader {
     margin: 32px 0;
     font-size: 14px;

@@ -1,5 +1,9 @@
+@import '/src/global-styles/style.scss';
+
 .teamContainer {
-  margin-right: 45px;
+  border-right: 1px solid var(--color-primary-athensGray1);
+  height: 100%;
+  padding: 0 28px 0 0;
 
   .teamHeader {
     margin: 32px 0;
@@ -11,9 +15,9 @@
 
   .teamList {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    margin: -14px 0 0 -14px;
-    gap: 4px 0px;
+    grid-template-columns: 32% 32% 32%;
+    margin: -14px 0 0 -15px;
+    gap: 4px 14px;
   }
   .teamButton {
     width: 100%;
@@ -21,7 +25,7 @@
     font-weight: 700;
     line-height: 14px;
     letter-spacing: -0.02em;
-    margin-top: 20px;
+    margin-top: 18px;
     padding: 6px 14px;
     background-color: var(--color-primary-lightPink);
     &:hover {

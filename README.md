@@ -1,1 +1,0 @@
-ClickUp is one of the most popular tools for online project and task management. Therefore, there is a high probability that you will encounter it in your future work. In this challenge, your task will be to replicate only one component of this huge platform - the Mega Menu.

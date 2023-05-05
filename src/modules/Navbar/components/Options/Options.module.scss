@@ -1,0 +1,65 @@
+@import '/src/global-styles/style.scss';
+
+.options {
+  @include flex(flex-start, center, row);
+  gap: 35px;
+  height: 100%;
+  margin-right: 5px;
+
+  .navItem {
+    display: flex;
+    position: relative;
+    gap: 5px;
+    height: 100%;
+    &:hover,
+    &.active {
+      &::after {
+        position: absolute;
+        content: ' ';
+        width: 100%;
+        border: 1px solid var(--color-accent-purple);
+        bottom: 0;
+      }
+    }
+  }
+  .accountOptions {
+    @include flex(flex-start, center, row);
+    gap: 9px;
+  }
+
+  @media (max-width: 1050px) {
+    &.active {
+      height: auto;
+      width: 100%;
+      margin: 34px 0 32px 0;
+    }
+    .accountOptions {
+      &.active {
+        @include flex(flex-start, center, column);
+        gap: 16px;
+        width: 100%;
+        padding: 0 24px;
+        .optionButton {
+          width: 100%;
+          padding: 17px 14px;
+        }
+      }
+    }
+    .contactButton {
+      display: none;
+    }
+  }
+
+  @media (max-width: 450px) {
+    .accountOptions {
+      .loginButton {
+        display: none;
+      }
+      &.active {
+        .loginButton {
+          display: block;
+        }
+      }
+    }
+  }
+}

@@ -14,7 +14,7 @@ export const Icon = ({ name = 'book', size = 25, className }: IconProps) => {
       width={size}
       height={size}
       className={clsx(styles.icon, className)}
-      src={`/public/icons/${name}.svg`}
+      src={`assets/icons/${name}.svg`}
       alt={`${name} icon`}
     />
   );

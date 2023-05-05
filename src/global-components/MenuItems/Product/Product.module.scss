@@ -36,7 +36,7 @@
     }
     .productList {
       grid-template-columns: 1fr;
-      margin: 0;
+      margin: 2px 0 0 0;
       gap: 0px;
     }
     .productCard {
@@ -45,7 +45,9 @@
       }
     }
     .productsButton {
-      margin-top: 10px;
+      margin-top: 9px;
+      width: 100%;
+      padding: 8px 16px;
     }
   }
 }

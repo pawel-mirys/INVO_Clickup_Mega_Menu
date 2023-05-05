@@ -7,8 +7,10 @@ import { useMenuContext } from '@/modules/contexts/MenuContext';
 import { Learn } from '../MenuItems/Learn/Learn';
 import { Blog } from '../MenuItems/Blog/Blog';
 import { ContactFooter } from '../ContactFooter/ContactFooter';
+import UserWindow from '@/useWindowWidth';
 
 export const LearnMenu = () => {
+  const windowWidth = UserWindow();
   const menuContext = useMenuContext();
 
   const handleLearnTab = () => {
@@ -24,6 +26,9 @@ export const LearnMenu = () => {
       <div className={styles.navigationButton}>
         <Button
           onClick={handleLearnTab}
+          onMouseOver={
+            windowWidth.dynamicWidth > 1200 ? handleLearnTab : undefined
+          }
           className={clsx(
             styles.navItem,
             menuContext?.learnTabState && styles.active

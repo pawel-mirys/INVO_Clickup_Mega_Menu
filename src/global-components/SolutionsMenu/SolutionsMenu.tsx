@@ -8,8 +8,10 @@ import { Team } from '../MenuItems/Team/Team';
 import { UseCase } from '../MenuItems/UseCase/UseCase';
 import { Type } from '../MenuItems/Type/Type';
 import { ContactFooter } from '../ContactFooter/ContactFooter';
+import UserWindow from '@/useWindowWidth';
 
 export const SolutionsMenu = () => {
+  const windowWidth = UserWindow();
   const menuContext = useMenuContext();
 
   const handleSolutionTab = () => {
@@ -24,6 +26,9 @@ export const SolutionsMenu = () => {
     <div className={styles.solutionsMenu}>
       <div className={styles.navigationButton}>
         <Button
+          onMouseOver={
+            windowWidth.dynamicWidth > 1200 ? handleSolutionTab : undefined
+          }
           onClick={handleSolutionTab}
           className={clsx(
             styles.navItem,

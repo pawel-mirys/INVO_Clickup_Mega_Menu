@@ -20,7 +20,8 @@ export const Card = ({
   className,
 }: CardProps) => {
   return (
-    <div
+    <a
+      href='#'
       className={clsx(
         styles.card,
         className,
@@ -31,6 +32,6 @@ export const Card = ({
         <h2 className={styles.title}>{title}</h2>
         <p className={styles.description}>{description}</p>
       </div>
-    </div>
+    </a>
   );
 };

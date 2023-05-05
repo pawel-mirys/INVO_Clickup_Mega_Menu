@@ -2,10 +2,12 @@ import React from 'react';
 import { Button } from '../Button/Button';
 import { Icon } from '../Icon/Icon';
 import styles from './ContactFooter.module.scss';
+import clsx from 'clsx';
+
 
 export const ContactFooter = () => {
   return (
-    <footer className={styles.footer}>
+    <footer className={clsx(styles.footer)}>
       <div className={styles.container}>
         <Button variant='clear' className={styles.contactButton}>
           <Icon size={24} name='phone' className={styles.icon} />

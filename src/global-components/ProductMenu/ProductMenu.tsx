@@ -7,8 +7,10 @@ import clsx from 'clsx';
 import { Product } from '../MenuItems/Product/Product';
 import { Platform } from '../MenuItems/Platform/Platform';
 import { ContactFooter } from '../ContactFooter/ContactFooter';
+import UserWindow from '@/useWindowWidth';
 
 export const ProductMenu = () => {
+  const windowWidth = UserWindow();
   const menuContext = useMenuContext();
 
   const handleProductTab = () => {
@@ -23,6 +25,9 @@ export const ProductMenu = () => {
     <div className={styles.productMenu}>
       <div className={styles.navigationButton}>
         <Button
+          onMouseOver={
+            windowWidth.dynamicWidth > 1200 ? handleProductTab : undefined
+          }
           onClick={handleProductTab}
           className={clsx(
             styles.navItem,
@@ -42,10 +47,11 @@ export const ProductMenu = () => {
 
       {menuContext?.productTabState && (
         <div className={styles.menuContainer}>
-          <div className={styles.menuWrapper}>
+          <div className={clsx(styles.menuWrapper)}>
             <Product />
             <Platform />
           </div>
+
           <ContactFooter />
         </div>
       )}

@@ -11,6 +11,7 @@
       position: relative;
       gap: 5px;
       height: 100%;
+      transition: all 0.3s;
       &::after {
         transition: all 0.3s;
         position: absolute;
@@ -37,6 +38,7 @@
   }
 
   .menuContainer {
+    animation: tabsTransform 0.5s ease-in-out;
     position: absolute;
     background-color: var(--color-primary-white);
     height: 342px;
@@ -68,22 +70,24 @@
         line-height: 18px;
         &:hover,
         &.active {
-          &::after {
-            border: none;
-          }
+          color: var(--color-accent-purple);
+        }
+        &::after {
+          border: none;
         }
       }
     }
 
     .menuContainer {
       position: static;
-      height: 100%;
       @include flex(center, center, column);
       margin-top: 16px;
-
+      height: auto;
+      animation: tabOpacity 0.5s ease-in-out;
       .menuWrapper {
         flex-direction: column;
         width: 100%;
+        height: auto;
       }
     }
   }

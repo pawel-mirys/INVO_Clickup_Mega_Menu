@@ -37,6 +37,7 @@
     }
     .navigationWrapper {
       &.active {
+        animation: menuTransform 0.5s ease-in-out alternate;
         @include flex(flex-start, flex-start, column);
         background-color: var(--color-primary-white);
         position: absolute;
@@ -44,7 +45,7 @@
         height: auto;
         min-height: 100%;
         right: 0px;
-        top: 79px;
+        top: 76px;
       }
     }
   }

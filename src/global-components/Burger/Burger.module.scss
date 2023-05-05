@@ -7,6 +7,7 @@
   height: 40px;
   cursor: pointer;
   gap: 5px;
+  z-index: 100;
 
   .bar {
     width: 55%;
@@ -27,7 +28,7 @@
     position: absolute;
   }
 
-  @media (max-width: 1200px) {
+  @media (max-width: 1050px) {
     @include flex(center, center, column);
   }
 }

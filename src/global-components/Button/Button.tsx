@@ -13,6 +13,7 @@ type ButtonProps = {
   className?: string;
   variant?: keyof typeof buttonType;
   onClick?: () => void;
+  onMouseOver?: () => void;
 };
 
 export const Button = ({
@@ -20,10 +21,12 @@ export const Button = ({
   className,
   variant,
   onClick,
+  onMouseOver,
 }: ButtonProps) => {
   return (
     <button
       onClick={onClick}
+      onMouseEnter={onMouseOver}
       className={clsx(
         styles.button,
         className,
